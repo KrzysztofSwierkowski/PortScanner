@@ -10,8 +10,8 @@ public class Main {
         int port = scanner.nextInt();
         Portx portx = new Portx();
         portx.setPort(port);
-        CheckPort checkPort = new CheckPort(portx.getPort());
-
+        CheckPort checkPort = new CheckPort();
+        checkPort.openPort(portx.getPort());
 
     }
 }
