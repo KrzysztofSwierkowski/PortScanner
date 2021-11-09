@@ -8,6 +8,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Type no. port to check:");
         int port = scanner.nextInt();
+        Portx portx = new Portx();
+        portx.setPort(port);
+        CheckPort checkPort = new CheckPort(portx.getPort());
 
 
     }
